@@ -1,0 +1,77 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #ddd;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #bbb;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#button-download {
+    background-color: #222;
+    transition: 0.3s ease;
+}
+
+.download {
+    margin-top: 10px;
+    border: 0px;
+}
+
+#link, #path {
+    border: 0;
+    background-color: #888;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 500px;
+}
+
+#type-label:hover {
+    cursor: default;
+}
+
+#link:focus, input:focus {
+    outline: none;
+}
+
+#download-btn {
+    background-color: #888;
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+}
+
+#download-btn:hover {
+    background-color: #777;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#download-btn:active {
+    background-color: #555;
+}
+
+.warnings:hover {
+    cursor: default;
+}
+
+#type-msg {
+    color: #f00;
+}

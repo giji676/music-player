@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Music Player</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a id="button-player" href="index.html">
+            <img src="assets/gray_player.png" >
+        </a>
+        <a id="button-download" href="download_index.html">
+            <img src="assets/gray_download.png">
+        </a>
+    </div>
+    <button id="directory-select">Select Directory</button>
+    <div class="main-container">
+        
+        <div class="function-btns">
+            <a id="shuffle">
+                <img src="assets/shuffle.png" >
+            </a>
+            <a id="play">
+                <img src="assets/play.png">
+            </a>
+            <a id="loop">
+                <img src="assets/loop.png">
+            </a>
+        </div>
+        <div class="player">
+            <audio controls id="music">
+                <source src="" id="music-player" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

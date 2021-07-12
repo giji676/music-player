@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Music Player</title>
+    <link rel="stylesheet" href="download_style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a id="button-player" href="index.html">
+            <img src="assets/gray_player.png" >
+        </a>
+        <a id="button-download" href="download_index.html">
+            <img src="assets/gray_download.png">
+        </a>
+    </div>
+    <div class="download">
+        <form action="/action_page.php">
+            <p1 id="type-label">Enter a youtube link to a playlist or a video:</p1>
+            <input type="text" name="link" id="link"><br>
+
+            <label for="mp3">mp3</label>
+            <input type="radio" name="gender" id="mp3" value="mp3"><br>
+            <label for="mp4">mp4</label>
+            <input type="radio" name="gender" id="mp4" value="mp4"><br>
+          </form>
+
+        <button id="download-btn" onclick="get_data()">Download</button>
+        <div class="warnings">
+            <p id="path-msg">Videos saved in directory: "/music"</p>
+            <p id="type-msg">If you choose "mp3", all the videos in this directory will be converted to "mp3"</p>
+        </div>
+    </div>
+</body>
+<script src="download_main.js"></script>
+</html>
